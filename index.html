@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie - Movie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-png">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span>Margot Robbie</span>
+            <span>Ryan Gosling</span>
+        </header>
+
+        <section class="phrase">
+            <h2>Ela é tudo.</h2>
+            <h2>Ele é só o Ken.</h2>
+        </section>
+
+        <section class="info">
+            <div class="cine">
+                <p>20 de Julho</p>
+                <p>Somento nos cinemas</p>
+            </div>
+
+            <div class="social">
+                <i class="ph-duotone ph-facebook-logo"></i>
+                <i class="ph-duotone ph-tiktok-logo"></i>
+                <i class="ph-duotone ph-instagram-logo"></i>
+                <i class="ph-duotone ph-twitter-logo"></i>
+            </div>
+        </section>
+
+        <section class="buttons">
+            <button>
+                <a href="https://google.com/search?q=barbie" target="_blank">Compre seu ingresso</a>
+            </button>
+            <button>
+                <a href="#" id="openModal">Assista ao trailer</a>
+            </button>
+        </section>
+
+       <div id="modalContainer">
+             <iframe id="youtubeIframe" width="1280" height="720"
+                src="https://www.youtube.com/embed/GRyt3Ov4zz0?si=IOv1oJ6kskmiBEie&amp;controls=0"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe> 
+        </div> 
+
+        <footer>
+            <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+
+            <i class="ph-duotone ph-speaker-slash"></i>
+
+            <audio id="music" loop>
+                <source src="audio/barbie.mp3" type="audio/mpeg">
+            </audio>
+
+            <img src="assets/warner-logo.svg" alt="warner">
+
+            <img id="scroll" src="assets/scroll-down.gif" alt="scroll" width="40px" height="40px">
+        </footer>
+    </div>
+</body>
+
+</html>
